@@ -16,7 +16,7 @@ export default {
     @use '../styles/partials/mixins' as *;
 
     main {
-        padding: 2rem;
+        padding: 2rem 0;
         color: white;
         background-color: $bg_primary_color;
 

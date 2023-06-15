@@ -75,7 +75,7 @@ export default {
     @use '../styles/partials/mixins' as *;
 
     header {
-        padding: 1rem;
+        padding: 1rem 0;
         
         div.wrapper {
             @include flex(row, space-between, center, no-wrap);
