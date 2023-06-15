@@ -4,39 +4,24 @@
             <div class="wrapper">
                 <div>
                     <ul>
-                        <li><h3>PROVA</h3></li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
+                        <li><h3>DC Comics</h3></li>
+                        <li v-for="link in dcComicsLinks"><a :href="link.link">{{ link.text }}</a></li>
                     </ul>
                     <ul>
-                        <li><h3>PROVA</h3></li>
-                        <li>Prova</li>
-                        <li>Prova</li>
+                        <li><h3>Shop</h3></li>
+                        <li v-for="link in shopLinks"><a :href="link.link">{{ link.text }}</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li><h3>PROVA</h3></li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
+                        <li><h3>DC</h3></li>
+                        <li v-for="link in dcLinks"><a :href="link.link">{{ link.text }}</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li><h3>PROVA</h3></li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
-                        <li>Prova</li>
+                        <li><h3>Sites</h3></li>
+                        <li v-for="link in sitesLinks"><a :href="link.link">{{ link.text }}</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,11 +46,126 @@
         </div>
     </footer>
 </template>
+
 <script>
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+
+    data() {
+        return {
+            dcComicsLinks: [
+                {
+                    text: 'Characters',
+                    link: '#'
+                },
+                {
+                    text: 'Comics',
+                    link: '#'
+                },
+                {
+                    text: 'Movies',
+                    link: '#'
+                },
+                {
+                    text: 'TV',
+                    link: '#'
+                },
+                {
+                    text: 'Games',
+                    link: '#'
+                },
+                {
+                    text: 'Videos',
+                    link: '#'
+                },
+                {
+                    text: 'News',
+                    link: '#'
+                }
+            ],
+            shopLinks: [
+                {
+                    text: 'Shop DC',
+                    link: '#'
+                },
+                {
+                    text: 'Shop DC Collectibles',
+                    link: '#'
+                }
+            ],
+            dcLinks: [
+                {
+                    text: 'Terms Of Use',
+                    link: '#'
+                },
+                {
+                    text: 'Privacy policy (New)',
+                    link: '#'
+                },
+                {
+                    text: 'Ad Choices',
+                    link: '#'
+                },
+                {
+                    text: 'Advertising',
+                    link: '#'
+                },
+                {
+                    text: 'Jobs',
+                    link: '#'
+                },
+                {
+                    text: 'Subscriptions',
+                    link: '#'
+                },
+                {
+                    text: 'Talent Workshops',
+                    link: '#'
+                },
+                {
+                    text: 'CPSC Certificates',
+                    link: '#'
+                },
+                {
+                    text: 'Ratings',
+                    link: '#'
+                },
+                {
+                    text: 'Shop Help',
+                    link: '#'
+                },
+                {
+                    text: 'Contact Us',
+                    link: '#'
+                }
+            ],
+            sitesLinks: [
+                {
+                    text: 'DC',
+                    link: '#'
+                },
+                {
+                    text: 'MAD Magazine',
+                    link: '#'
+                },
+                {
+                    text: 'DC Kids',
+                    link: '#'
+                },
+                {
+                    text: 'DC Universe',
+                    link: '#'
+                },
+                {
+                    text: 'DC Power Visa',
+                    link: '#'
+                }
+            ]
+        }
+    }
 }
 </script>
+
 <style lang="scss" scoped>
     @use '../styles/general' as *;
     @use '../styles/partials/variables' as *;
