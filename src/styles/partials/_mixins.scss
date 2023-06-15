@@ -5,3 +5,8 @@
     align-items: $align;
     flex-wrap: $wrap;
 }
+
+@mixin w-75-centered() {
+    width: 75%;
+    margin: 0 auto;
+}
