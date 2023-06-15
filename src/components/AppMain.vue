@@ -1,6 +1,8 @@
 <template>
     <main>
-        <h1>AppMain</h1>
+        <div class="wrapper">
+            <h1>Content goes here</h1>
+        </div>
     </main>
 </template>
 <script>
@@ -9,5 +11,18 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
+    @use '../styles/partials/mixins' as *;
 
+    main {
+        height: 150px;
+        color: white;
+        background-color: $bg_primary_color;
+
+        div.wrapper {
+            @include flex(row, start, center, no-wrap);
+            @include w-75-centered;
+            height: 100%;
+        }
+    }
 </style>
