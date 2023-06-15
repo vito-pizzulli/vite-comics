@@ -6,7 +6,10 @@
         </div>
         <nav id="header-navbar">
             <ul>
-                <li v-for="link in navbarLinks"><a :href="link.link">{{ link.text }}</a></li>
+                <li v-for="link in navbarLinks">
+                    <a :href="link.link">{{ link.text }}</a>
+                    <div class="light-bar"></div>
+                </li>
             </ul>
         </nav>
         </div>
@@ -33,7 +36,7 @@ export default {
                         link: '#'
                     },
                     {
-                        text: 'Tv',
+                        text: 'TV',
                         link: '#'
                     },
                     {
@@ -75,7 +78,7 @@ export default {
         height: 150px;
         
         div.wrapper {
-            @include flex(row, space-around, center, no-wrap);
+            @include flex(row, space-between, center, no-wrap);
             @include w-75-centered;
             height: 100%;
 
@@ -86,6 +89,31 @@ export default {
 
                     li {
                         margin: 1rem;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        position: relative;
+
+                        &:hover div.light-bar {
+                            opacity: 1;
+                        }
+
+                        a {
+                            transition: all .3s;
+
+                            &:hover {
+                                color: $primary_color;
+                            }
+                        }
+
+                        div.light-bar {
+                            position: absolute;
+                            width: 100%;
+                            height: 7px;
+                            background-color: $primary_color;
+                            top: 360%;
+                            opacity: 0;
+                            transition: all .3s;
+                        }
                     }
                 }
             }
