@@ -5,6 +5,7 @@
     <AppFooter />
   </div>
 </template>
+
 <script>
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
@@ -19,6 +20,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
 
+<style lang="scss">
+  @use './styles/general' as *;
 </style>
