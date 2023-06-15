@@ -5,11 +5,13 @@
         </div>
     </main>
 </template>
+
 <script>
 export default {
     name: 'AppMain'
 }
 </script>
+
 <style lang="scss" scoped>
     @use '../styles/general' as *;
     @use '../styles/partials/variables' as *;

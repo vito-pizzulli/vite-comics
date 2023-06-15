@@ -26,7 +26,6 @@
                 </div>
             </div>
         </div>
-
         <div id="bottom-footer">
             <div class="wrapper">
                 <div class="sign-up">
