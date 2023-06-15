@@ -25,6 +25,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+    @use '../styles/general' as *;
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
 
@@ -41,7 +42,6 @@ export default {
 
                 ul {
                     @include flex(row, space-between, center, no-wrap);
-                    list-style: none;
 
                     li {
                         margin: 1rem;
