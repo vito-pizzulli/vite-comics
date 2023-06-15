@@ -75,7 +75,7 @@ export default {
     @use '../styles/partials/mixins' as *;
 
     header {
-        height: 150px;
+        padding: 1rem;
         
         div.wrapper {
             @include flex(row, space-between, center, no-wrap);
@@ -110,7 +110,7 @@ export default {
                             width: 100%;
                             height: 7px;
                             background-color: $primary_color;
-                            top: 360%;
+                            top: 335%;
                             opacity: 0;
                             transition: all .3s;
                         }
