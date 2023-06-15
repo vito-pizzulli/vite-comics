@@ -174,11 +174,10 @@ export default {
     footer {
 
         div#upper-footer {
-            color: $secondary_color;
             background-image: url(../assets/img/footer-bg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            height: 500px;
+            padding: 2rem;
 
             div.wrapper {
                 @include flex(row, start, start, no-wrap);
@@ -187,9 +186,20 @@ export default {
 
                 ul {
                     padding: 0;
+                    margin-right: 2rem;
 
                     li {
-                        margin: 1rem;
+                        margin: .3rem;
+
+                        a {
+                            color: $secondary_color;
+                        }
+
+                        h3 {
+                            text-transform: uppercase;
+                            color: white;
+                            margin-bottom: 1rem;
+                        }
                     }
                 }
             }
