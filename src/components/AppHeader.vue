@@ -31,7 +31,7 @@ export default {
     header {
         height: 150px;
         background-color: red;
-
+        
         div.wrapper {
             @include flex(row, space-around, center, no-wrap);
             @include w-75-centered;
