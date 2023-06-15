@@ -221,9 +221,10 @@ export default {
                         text-transform: uppercase;
                         background-color: transparent;
                         color: white;
-                        padding: .8rem 1rem;
+                        padding: 1rem;
                         border: 2px solid $primary_color;
                         font-weight: 600;
+                        font-size: 1rem;
                     }
                 }
 
@@ -237,6 +238,11 @@ export default {
                             text-transform: uppercase;
                             font-weight: 600;
                             color: $primary_color;
+                            font-size: 1.5rem;
+
+                            img {
+                                vertical-align: bottom;
+                            }
                         }
                     }
                 }
