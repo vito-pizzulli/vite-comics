@@ -16,7 +16,7 @@ export default {
     @use '../styles/partials/mixins' as *;
 
     main {
-        height: 150px;
+        padding: 2rem;
         color: white;
         background-color: $bg_primary_color;
 
