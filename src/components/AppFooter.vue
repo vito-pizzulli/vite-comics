@@ -177,7 +177,7 @@ export default {
             background-image: url(../assets/img/footer-bg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            padding: 2rem;
+            padding: 3rem 0;
 
             div.wrapper {
                 @include flex(row, start, start, no-wrap);
@@ -208,12 +208,24 @@ export default {
         div#bottom-footer {
             color: white;
             background-color: $bg_secondary_color;
-            height: 150px;
+            padding: 1rem 0;
             
             div.wrapper {
                 @include flex(row, space-between, center, no-wrap);
                 @include w-75-centered;
                 height: 100%;
+
+                div.sign-up {
+
+                    button {
+                        text-transform: uppercase;
+                        background-color: transparent;
+                        color: white;
+                        padding: .8rem 1rem;
+                        border: 2px solid $primary_color;
+                        font-weight: 600;
+                    }
+                }
 
                 div.follow-us {
 
@@ -222,6 +234,9 @@ export default {
 
                         li {
                             margin: .5rem;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            color: $primary_color;
                         }
                     }
                 }
