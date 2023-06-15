@@ -21,43 +21,43 @@ export default {
             return {
                 navbarLinks: [
                     {
-                        text: 'characters',
+                        text: 'Characters',
                         link: '#'
                     },
                     {
-                        text: 'comics',
+                        text: 'Comics',
                         link: '#'
                     },
                     {
-                        text: 'movies',
+                        text: 'Movies',
                         link: '#'
                     },
                     {
-                        text: 'tv',
+                        text: 'Tv',
                         link: '#'
                     },
                     {
-                        text: 'games',
+                        text: 'Games',
                         link: '#'
                     },
                     {
-                        text: 'collectibles',
+                        text: 'Collectibles',
                         link: '#'
                     },
                     {
-                        text: 'videos',
+                        text: 'Videos',
                         link: '#'
                     },
                     {
-                        text: 'fans',
+                        text: 'Fans',
                         link: '#'
                     },
                     {
-                        text: 'news',
+                        text: 'News',
                         link: '#'
                     },
                     {
-                        text: 'shop',
+                        text: 'Shop',
                         link: '#'
                     },
                 ]
