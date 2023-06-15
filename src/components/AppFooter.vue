@@ -2,27 +2,32 @@
     <footer>
         <div id="upper-footer">
             <div class="wrapper">
-                <div>
-                    <ul>
-                        <li><h3>DC Comics</h3></li>
-                        <li v-for="link in dcComicsLinks"><a :href="link.link">{{ link.text }}</a></li>
-                    </ul>
-                    <ul>
-                        <li><h3>Shop</h3></li>
-                        <li v-for="link in shopLinks"><a :href="link.link">{{ link.text }}</a></li>
-                    </ul>
+                <div id="upper-footer-elements">
+                    <div>
+                        <ul>
+                            <li><h3>DC Comics</h3></li>
+                            <li v-for="link in dcComicsLinks"><a :href="link.link">{{ link.text }}</a></li>
+                        </ul>
+                        <ul>
+                            <li><h3>Shop</h3></li>
+                            <li v-for="link in shopLinks"><a :href="link.link">{{ link.text }}</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><h3>DC</h3></li>
+                            <li v-for="link in dcLinks"><a :href="link.link">{{ link.text }}</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><h3>Sites</h3></li>
+                            <li v-for="link in sitesLinks"><a :href="link.link">{{ link.text }}</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        <li><h3>DC</h3></li>
-                        <li v-for="link in dcLinks"><a :href="link.link">{{ link.text }}</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><h3>Sites</h3></li>
-                        <li v-for="link in sitesLinks"><a :href="link.link">{{ link.text }}</a></li>
-                    </ul>
+                <div id="upper-footer-background-logo">
+                    <img src="../assets/img/dc-logo-bg.png" alt="DC Comics Background Logo">
                 </div>
             </div>
         </div>
@@ -177,29 +182,40 @@ export default {
             background-repeat: no-repeat;
             background-size: cover;
             padding: 3rem 0;
+            overflow: hidden;
 
             div.wrapper {
-                @include flex(row, start, start, no-wrap);
                 @include w-75-centered;
+                @include flex(row, space-between, start, no-wrap);
                 height: 100%;
 
-                ul {
+                div#upper-footer-elements {
+                    @include flex(row, start, start, no-wrap);
+
+                    ul {
                     padding: 0;
                     margin-right: 2rem;
 
-                    li {
-                        margin: .3rem;
+                        li {
+                            margin: .3rem;
 
-                        a {
-                            color: $secondary_color;
-                        }
+                            a {
+                                color: $secondary_color;
+                            }
 
-                        h3 {
-                            text-transform: uppercase;
-                            color: white;
-                            margin-bottom: 1rem;
+                            h3 {
+                                text-transform: uppercase;
+                                color: white;
+                                margin-bottom: 1rem;
+                            }
                         }
                     }
+                }
+
+                div#upper-footer-background-logo img {
+                    width: 400px;
+                    transform: scale(2);
+                    transform-origin: right;
                 }
             }
         }
