@@ -174,7 +174,7 @@ export default {
     footer {
 
         div.upper-footer {
-            color: $txt_secondary_color;
+            color: $secondary_color;
             background-image: url(../assets/img/footer-bg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
