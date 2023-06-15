@@ -1,0 +1,13 @@
+<template>
+    <footer>
+        <h1>AppFooter</h1>
+    </footer>
+</template>
+<script>
+export default {
+    name: 'AppFooter'
+}
+</script>
+<style lang="scss" scoped>
+
+</style>
