@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div class="upper-footer">
+        <div id="upper-footer">
             <div class="wrapper">
                 <div>
                     <ul>
@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        <div class="bottom-footer">
+        <div id="bottom-footer">
             <div class="wrapper">
                 <div class="sign-up">
                     <button>Sign-up now!</button>
@@ -173,7 +173,7 @@ export default {
 
     footer {
 
-        div.upper-footer {
+        div#upper-footer {
             color: $secondary_color;
             background-image: url(../assets/img/footer-bg.jpg);
             background-repeat: no-repeat;
@@ -195,7 +195,7 @@ export default {
             }
         }
 
-        div.bottom-footer {
+        div#bottom-footer {
             color: white;
             background-color: $bg_secondary_color;
             height: 150px;
