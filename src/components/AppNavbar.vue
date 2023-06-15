@@ -59,9 +59,28 @@ export default {
         height: 200px;
 
         div.wrapper {
-            @include flex(row, start, center, no-wrap);
+            @include flex(row, center, center, no-wrap);
             @include w-75-centered;
             height: 100%;
+
+            ul {
+                @include flex(row, space-around, center, no-wrap);
+                width: 100%;
+
+                li {
+                    @include flex(row, center, center, no-wrap);
+
+                    img {
+                        height: 70px;
+                        margin-right: 1rem;
+                    }
+
+                    a {
+                        text-transform: uppercase;
+                        color: white;
+                    }
+                }
+            }
         }
     }
 </style>
