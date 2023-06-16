@@ -24,7 +24,6 @@ export default {
 
         div.wrapper {
             @include flex(row, start, center, no-wrap);
-            @include w-75-centered;
             height: 100%;
         }
     }

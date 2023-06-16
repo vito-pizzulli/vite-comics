@@ -79,7 +79,6 @@ export default {
         
         div.wrapper {
             @include flex(row, space-between, center, no-wrap);
-            @include w-75-centered;
             height: 100%;
 
             nav#header-navbar {

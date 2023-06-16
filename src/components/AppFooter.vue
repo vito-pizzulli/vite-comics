@@ -213,7 +213,6 @@ export default {
             overflow: hidden;
 
             div.wrapper {
-                @include w-75-centered;
                 @include flex(row, space-between, start, no-wrap);
                 height: 100%;
 
@@ -260,7 +259,6 @@ export default {
             
             div.wrapper {
                 @include flex(row, space-between, center, no-wrap);
-                @include w-75-centered;
                 height: 100%;
 
                 div.sign-up {
