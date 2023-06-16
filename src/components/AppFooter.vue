@@ -271,6 +271,12 @@ export default {
                         border: 2px solid $primary_color;
                         font-weight: 600;
                         font-size: 1rem;
+                        transition: all .3s ease;
+
+                        &:hover {
+                            background-color: $primary_color;
+                            border: 2px solid white;
+                        }
                     }
                 }
 
@@ -288,6 +294,11 @@ export default {
 
                             img {
                                 vertical-align: bottom;
+                                transition: all .3s ease;
+
+                                &:hover {
+                                    filter: brightness(0) invert(1);
+                                }
                             }
                         }
                     }
