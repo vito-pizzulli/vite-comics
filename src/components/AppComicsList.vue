@@ -102,4 +102,9 @@ export default {
     @use '../styles/general' as *;
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
+
+    div#comics-list {
+        @include flex(row, space-between, center, wrap);
+        padding: 3rem 0;
+    }
 </style>
