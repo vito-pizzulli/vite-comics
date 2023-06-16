@@ -1,5 +1,8 @@
 <template>
     <div class="wrapper">
+        <div class="title">
+            <span>Current series</span>
+        </div>
         <div id="comics-list">
             <AppComicsElement v-for="comic in comicsList"
                 :comicsElement="comic"
@@ -105,6 +108,19 @@ export default {
 
     div.wrapper {
         @include flex(column, center, center, no-wrap);
+        position: relative;
+
+        div.title {
+            background-color: $primary_color;
+            padding: .5rem 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+        }
 
         div#comics-list {
             @include flex(row, space-between, center, wrap);
