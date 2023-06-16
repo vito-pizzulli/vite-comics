@@ -27,6 +27,11 @@ export default {
         height: 250px;
         cursor: pointer;
         text-align: center;
+        transition: all .1s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 
         img {
             width: 170px;
