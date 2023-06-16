@@ -72,6 +72,7 @@ export default {
 
                     img {
                         height: 70px;
+                        max-width: 70px;
                         margin-right: 1rem;
                     }
 
