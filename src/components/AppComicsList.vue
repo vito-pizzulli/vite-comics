@@ -1,14 +1,16 @@
 <template>
     <div class="comics-list">
-        <div class="wrapper">
-            <h1>Prova</h1>
-        </div>
+        <AppComicsElement />
     </div>
 </template>
 <script>
+import AppComicsElement from './AppComicsElement.vue';
 export default {
     name: 'AppComicsList',
-
+    
+    components: {
+        AppComicsElement
+    },
     data() {
         return {
             comicsList: [
