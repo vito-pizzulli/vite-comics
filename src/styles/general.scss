@@ -23,3 +23,20 @@ div.wrapper {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+
+/* Responsive Layouts */
+
+/* 2K Layout (from 2560px to 3840px */
+@media screen and (min-width: 2560px) {
+    div.wrapper {
+        max-width: 1800px;
+    }
+}
+
+/* 4K Layout (from 3840px to higher resolutions */
+@media screen and (min-width: 3840px) {
+    div.wrapper {
+        max-width: 2800px;
+    }
+}
