@@ -4,8 +4,8 @@
             <AppComicsElement v-for="comic in comicsList"
                 :comicsElement="comic"
             />
-
         </div>
+        <button>Load more</button>
     </div>
 </template>
 
@@ -103,8 +103,22 @@ export default {
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
 
-    div#comics-list {
-        @include flex(row, space-between, center, wrap);
-        padding: 3rem 0;
+    div.wrapper {
+        @include flex(column, center, center, no-wrap);
+
+        div#comics-list {
+            @include flex(row, space-between, center, wrap);
+            padding: 1rem 0;
+        }
+    }
+
+    button {
+        padding: .7rem 3rem;
+        background-color: $primary_color;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin: 2rem 0;
     }
 </style>
