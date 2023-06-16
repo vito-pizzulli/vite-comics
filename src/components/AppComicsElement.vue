@@ -1,6 +1,6 @@
 <template>
     <div class="comics-element">
-        <img :src="comicsElement.thumb" :alt="comicsElement.series">
+        <img :src="comicsElement.thumb" :alt="comicsElement.series"><br>
         <span>{{ comicsElement.series }}</span>
     </div>
 </template>
@@ -21,21 +21,20 @@ export default {
     @use '../styles/partials/mixins' as *;
 
     div.comics-element {
-        width: calc(100% / 6);
-        margin: 2rem .5rem;
-        width: 170px;
-        height: 250px;
+        width: calc(100% / 6 - 1rem);
+        margin: 2rem 0;
         cursor: pointer;
         text-align: center;
         transition: all .2s ease;
+        height: 300px;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         img {
-            width: 170px;
-            height: 250px;
+            max-width: 190px;
+            height: 300px;
         }
 
         span {
