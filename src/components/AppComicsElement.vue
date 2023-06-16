@@ -22,8 +22,11 @@ export default {
 
     div.comics-element {
         width: calc(100% / 6);
-        margin: 2rem 0;
+        margin: 2rem .5rem;
+        width: 170px;
         height: 250px;
+        cursor: pointer;
+        text-align: center;
 
         img {
             width: 170px;
