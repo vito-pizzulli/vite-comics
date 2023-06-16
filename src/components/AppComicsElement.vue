@@ -1,17 +1,20 @@
 <template>
     <div class="comics-element">
-        <div class="wrapper">
-            <h1>Prova</h1>
-        </div>
+        <h1>{{ comicsELement }}</h1>
     </div>
 </template>
+
 <script>
 export default {
-    name: 'AppComicsElement'
+    name: 'AppComicsElement',
 
+    props: {
+        comicsElement : Object
+    }
 }
 </script>
-<style lang="scss">
+
+<style lang="scss" scoped>
     @use '../styles/general' as *;
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;

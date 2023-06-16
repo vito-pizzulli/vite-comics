@@ -1,13 +1,19 @@
 <template>
-    <div class="comics-list">
-        <AppComicsElement />
+    <div class="wrapper">
+        <div id="comics-list">
+            <AppComicsElement v-for="comic in comicsList"
+                :comicsElement="comic"
+            />
+
+        </div>
     </div>
 </template>
+
 <script>
 import AppComicsElement from './AppComicsElement.vue';
 export default {
     name: 'AppComicsList',
-    
+
     components: {
         AppComicsElement
     },
@@ -91,6 +97,7 @@ export default {
     }
 }
 </script>
+
 <style lang="scss" scoped>
     @use '../styles/general' as *;
     @use '../styles/partials/variables' as *;
