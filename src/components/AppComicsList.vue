@@ -118,7 +118,7 @@ export default {
             position: absolute;
             top: 0;
             left: 0;
-            transform: translateY(-50%);
+            transform: translate(-10%, -50%);
             font-size: 1.5rem;
         }
 
