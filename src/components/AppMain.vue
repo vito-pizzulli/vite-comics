@@ -1,14 +1,20 @@
 <template>
     <main>
-        <div class="wrapper">
-            <h1>Content goes here</h1>
-        </div>
+        <AppComicsList />
+        <AppNavbar />
     </main>
 </template>
 
 <script>
+import AppComicsList from './AppComicsList.vue';
+import AppNavbar from './AppNavbar.vue';
 export default {
-    name: 'AppMain'
+    name: 'AppMain',
+
+    components: {
+        AppComicsList,
+        AppNavbar,
+    }
 }
 </script>
 
@@ -18,13 +24,7 @@ export default {
     @use '../styles/partials/mixins' as *;
 
     main {
-        padding: 2rem 0;
         color: white;
         background-color: $bg_primary_color;
-
-        div.wrapper {
-            @include flex(row, start, center, no-wrap);
-            height: 100%;
-        }
     }
 </style>
