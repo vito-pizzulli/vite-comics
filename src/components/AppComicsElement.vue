@@ -27,7 +27,7 @@ export default {
         height: 250px;
         cursor: pointer;
         text-align: center;
-        transition: all .1s;
+        transition: all .2s ease;
 
         &:hover {
             transform: scale(1.1);
