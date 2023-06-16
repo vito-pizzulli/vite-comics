@@ -39,7 +39,7 @@
                 <div class="follow-us">
                     <ul>
                         <li>Follow us</li>
-                        <li v-for="social in socials"><a :href="social.link"><img :src="social.image" :alt="social.text"></a></li>
+                        <li v-for="social in socials"><a :href="social.link"><img :src="getImagePath(social.image)" :alt="social.text"></a></li>
                     </ul>
                 </div>
             </div>
@@ -164,30 +164,35 @@ export default {
             socials: [
                 {
                     text: 'Facebook',
-                    image: 'src/assets/img/footer-facebook.png',
+                    image: 'img/footer-facebook.png',
                     link: '#'
                 },
                 {
                     text: 'Twitter',
-                    image: 'src/assets/img/footer-twitter.png',
+                    image: 'img/footer-twitter.png',
                     link: '#'
                 },
                 {
                     text: 'YouTube',
-                    image: 'src/assets/img/footer-youtube.png',
+                    image: 'img/footer-youtube.png',
                     link: '#'
                 },
                 {
                     text: 'Pinterest',
-                    image: 'src/assets/img/footer-pinterest.png',
+                    image: 'img/footer-pinterest.png',
                     link: '#'
                 },
                 {
                     text: 'Periscope',
-                    image: 'src/assets/img/footer-periscope.png',
+                    image: 'img/footer-periscope.png',
                     link: '#'
                 }
             ]
+        }
+    },
+    methods: {
+        getImagePath: function(img) {
+            return new URL(`../assets/${img}`, import.meta.url).href;
         }
     }
 }
