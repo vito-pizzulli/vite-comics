@@ -3,7 +3,7 @@
         <div class="wrapper">
             <ul>
                 <li v-for="link in navbarLinks">
-                    <img :src="link.image" :alt="link.text + ' Image'">
+                    <img :src="getImagePath(link.image)" :alt="link.text + ' Image'">
                     <a :href="link.link">{{ link.text }}</a>
                 </li>
             </ul>
@@ -20,30 +20,35 @@ export default {
             navbarLinks: [
                 {
                     text: 'Digital comics',
-                    image: 'src/assets/img/buy-comics-digital-comics.png',
+                    image: 'img/buy-comics-digital-comics.png',
                     link: '#'
                 },
                 {
                     text: 'DC Merchandise',
-                    image: 'src/assets/img/buy-comics-merchandise.png',
+                    image: 'img/buy-comics-merchandise.png',
                     link: '#'
                 },
                 {
                     text: 'Subscription',
-                    image: 'src/assets/img/buy-comics-subscriptions.png',
+                    image: 'img/buy-comics-subscriptions.png',
                     link: '#'
                 },
                 {
                     text: 'Comics Shop Locator',
-                    image: 'src/assets/img/buy-comics-shop-locator.png',
+                    image: 'img/buy-comics-shop-locator.png',
                     link: '#'
                 },
                 {
                     text: 'DC Power Visa',
-                    image: 'src/assets/img/buy-dc-power-visa.svg',
+                    image: 'img/buy-dc-power-visa.svg',
                     link: '#'
                 }
             ]
+        }
+    },
+    methods: {
+        getImagePath: function(img) {
+            return new URL(`../assets/${img}`, import.meta.url).href;
         }
     }
 }
