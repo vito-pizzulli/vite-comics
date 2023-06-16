@@ -136,5 +136,10 @@ export default {
         text-transform: uppercase;
         font-weight: 600;
         margin: 2rem 0;
+        transition: all .3s ease;
+
+        &:hover {
+            margin-bottom: 5rem;
+        }
     }
 </style>
