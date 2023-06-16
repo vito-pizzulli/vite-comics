@@ -1,6 +1,7 @@
 <template>
     <div class="comics-element">
         <img :src="comicsElement.thumb" :alt="comicsElement.series">
+        <span>{{ comicsElement.series }}</span>
     </div>
 </template>
 
@@ -21,11 +22,16 @@ export default {
 
     div.comics-element {
         width: calc(100% / 6);
-        margin: 1rem 0;
+        margin: 2rem 0;
+        height: 250px;
 
         img {
-            width: 180px;
+            width: 170px;
             height: 250px;
+        }
+
+        span {
+            text-transform: uppercase;
         }
     }
 </style>
