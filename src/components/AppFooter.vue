@@ -229,6 +229,11 @@ export default {
 
                             a {
                                 color: $secondary_color;
+                                transition: all .3s;
+
+                                &:hover {
+                                color: white;
+                                }
                             }
 
                             h3 {
