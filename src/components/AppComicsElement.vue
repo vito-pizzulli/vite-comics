@@ -1,6 +1,6 @@
 <template>
     <div class="comics-element">
-        <h1>{{ comicsELement }}</h1>
+        <h1>{{ comicsElement }}</h1>
     </div>
 </template>
 
