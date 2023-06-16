@@ -39,11 +39,7 @@
                 <div class="follow-us">
                     <ul>
                         <li>Follow us</li>
-                        <li><img src="../assets/img/footer-facebook.png" alt="Facebook Logo"></li>
-                        <li><img src="../assets/img/footer-twitter.png" alt="Twitter Logo"></li>
-                        <li><img src="../assets/img/footer-youtube.png" alt="YouTube Logo"></li>
-                        <li><img src="../assets/img/footer-pinterest.png" alt="Pinterest Logo"></li>
-                        <li><img src="../assets/img/footer-periscope.png" alt="Periscope Logo"></li>
+                        <li v-for="social in socials"><a :href="social.link"><img :src="social.image" :alt="social.text"></a></li>
                     </ul>
                 </div>
             </div>
@@ -162,6 +158,33 @@ export default {
                 },
                 {
                     text: 'DC Power Visa',
+                    link: '#'
+                }
+            ],
+            socials: [
+                {
+                    text: 'Facebook',
+                    image: 'src/assets/img/footer-facebook.png',
+                    link: '#'
+                },
+                {
+                    text: 'Twitter',
+                    image: 'src/assets/img/footer-twitter.png',
+                    link: '#'
+                },
+                {
+                    text: 'YouTube',
+                    image: 'src/assets/img/footer-youtube.png',
+                    link: '#'
+                },
+                {
+                    text: 'Pinterest',
+                    image: 'src/assets/img/footer-pinterest.png',
+                    link: '#'
+                },
+                {
+                    text: 'Periscope',
+                    image: 'src/assets/img/footer-periscope.png',
                     link: '#'
                 }
             ]
