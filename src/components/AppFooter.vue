@@ -255,7 +255,7 @@ export default {
         div#bottom-footer {
             color: white;
             background-color: $bg_secondary_color;
-            padding: 1rem 0;
+            padding: 2rem 0;
             
             div.wrapper {
                 @include flex(row, space-between, center, no-wrap);

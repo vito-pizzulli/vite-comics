@@ -61,7 +61,7 @@ export default {
 
     div#navbar-blue {
         background-color: $primary_color;
-        padding: 2.5rem 0;
+        padding: 3.5rem 0;
 
         div.wrapper {
             @include flex(row, center, center, no-wrap);
