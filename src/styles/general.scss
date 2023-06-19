@@ -1,5 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/open-sans-condensed-2');
 
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans Condensed', sans-serif;
     margin: 0;
